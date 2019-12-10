@@ -14,6 +14,6 @@ suite('All cases', () => {
         assert.equal(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]), "(123) 456-7890");
     });
     test('Fail case', () => {
-        assert.equal(createPhoneNumber(['a', 2, 3, 4, 5, 6, 7, 8, 9, 0]), "All elements need to be numbers");
+        assert.equal(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 'b']), "All elements need to be numbers");
     });
 });
