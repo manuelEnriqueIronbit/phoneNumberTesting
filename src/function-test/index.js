@@ -1,4 +1,4 @@
-function createPhoneNumber(numbers){
+const createPhoneNumber = numbers => {
   //Se separan los elementos deseados con slice
   for(element of numbers){
     if (typeof element !== "number"){
